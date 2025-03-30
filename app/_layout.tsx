@@ -17,9 +17,9 @@ const RootLayout = () => {
         <Stack.Screen name="About" options={{ headerTitle: "关于" }} />
         <Stack.Screen name="users/[id]" options={{ headerTitle: "用户" }} />
       </Stack> */}
-      <Tabs>
+      <Tabs initialRouteName="index">
+        <Tabs.Screen name="index" options={{ headerTitle: "首页" }} />
         <Tabs.Screen name="About" options={{ headerTitle: "关于" }} />
-        <Tabs.Screen name="Index" options={{ headerTitle: "首页" }} />
         <Tabs.Screen
           name="users/[id]"
           options={{
